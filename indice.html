@@ -27,12 +27,22 @@
             <div id="resultado">
                 <h1><span class='badge bg-primary mt-3'>Formulario</span></h1>
                 <form action="#">
-                    <label for="basic-url" class="form-label">Correo electronico</label>
+                    <label for="basic-url" class="form-label">Ingresar las dimensiones del contendor</label>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <span class="input-group-text" id="basic-addon1">Base</span>
                         <input type="text" class="form-control">
                     </div>
-
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Altura</span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Area</span>
+                        <input class="form-control" type="text" placeholder="0" aria-label="" disabled>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button type="button" class="btn btn-primary btn-lg">Calcular</button>
+                    </div>
                 </form>
             </div>
         </div>
