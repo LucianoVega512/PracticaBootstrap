@@ -1,0 +1,7 @@
+- indice.html
+    - Crea botones de menu.
+    - Crea pantalla Login.
+
+- selector.js
+    - optimiza codigo.
+        
