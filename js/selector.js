@@ -6,8 +6,8 @@ window.onload = () => {
         resultadoLogin();
     };
 
-    botones[1].onclick = (e) => {
-        
+    botones[1].onclick = () => {
+        calculadoraArea();        
     };
 
     botones[2].onclick = () => {
@@ -15,13 +15,16 @@ window.onload = () => {
     };
 };
 
-function boton2(bs){
-    bs.forEach(boton => {
-        console.log(boton);
-    });
+// function boton2(bs){
+//     bs.forEach(boton => {
+//         console.log(boton);
+//     });
+// }
+
+function calculadoraArea()
+{
+    document.getElementById("resultado").innerHTML = "<h1><span class='badge bg-primary mt-3'>Formulario</span></h1><form action='#'><label for='basic-url' class='form-label'>Ingresar las dimensiones del contendor</label><div class='input-group mb-3'><span class='input-group-text' id='basic-addon1'>Base</span><input type='text' class='form-control' id='base'></div><div class='input-group mb-3'><span class='input-group-text' id='basic-addon1'>Altura</span><input type='text' class='form-control' id='altura'></div><div class='input-group mb-3'><span class='input-group-text' id='basic-addon1'>Area</span><input class='form-control' type='text' placeholder='0' aria-label='' disabled id='area'></div><div class='input-group mb-3'><button type='button' class='btn btn-primary btn-lg' id='calcular'>Calcular</button></div>";
 }
-
-
 
 function resultadoLogin(){
     document.getElementById("resultado").innerHTML = "<h1><span class='badge bg-primary mt-3'>Login</span></h1><form action='#'><div class='input-group my-3'>" +
